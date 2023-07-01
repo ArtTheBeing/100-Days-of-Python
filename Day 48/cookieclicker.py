@@ -36,7 +36,6 @@ while time.time() < timeout_start + timeout:
         #Get Cookie Amount
         #List of Prices to Buy
         reversed_dict = {key: value for key, value in reversed(prices.items())}
-        print(reversed_dict)
         for item in reversed_dict:
             amount = int(driver.find_element(By.XPATH, '//*[@id="cookies"]').text.split(" ")[0])
             if amount > item:
