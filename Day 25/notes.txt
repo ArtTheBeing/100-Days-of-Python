@@ -1,0 +1,9 @@
+Day 25 Notes: Pandas
+
+Dataframe - its the whole csv file
+Series - basically a single collumn
+
+API reference shows what you can do
+
+Can convert dataframe to various different data types
+

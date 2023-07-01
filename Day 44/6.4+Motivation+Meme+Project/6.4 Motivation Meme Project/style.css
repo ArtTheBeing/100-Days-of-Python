@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+div{
+    text-align: center;
+    color: white;
+    margin: 20px
+}
+img{
+    border: 5px solid yellow
+}

@@ -1,0 +1,4 @@
+Webdevelopment:
+HTML: structure of website -> house foundation
+CSS: Style website -> house painting
+JS: Code that runs the stuff -> house electicity/plumbing lines
