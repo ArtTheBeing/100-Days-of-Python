@@ -8,8 +8,8 @@ from datetime import timedelta
 from twilio.rest import *
 today = dt.date.today() - timedelta(days = 1)
 yesterday = today - timedelta(days = 1)
-apikey = 'Y90H3UY88LS9YMCM'
-newsapi = 'a9b1f5efa3924ab8ab31fda5e786dd37'
+apikey = ''
+newsapi = ''
 parameters = {'function' : 'TIME_SERIES_DAILY_ADJUSTED',
               'symbol' : STOCK,
               'apikey' : apikey
@@ -47,8 +47,8 @@ url2 = 'https://newsapi.org/v2/everything'
 news = requests.get(url2, params = news_param)
 articles = news.json()['articles']
 
-account_sid = 'ACcc4158490acee5cd4a690e1726d12e9b'
-auth_token = 'a7a2cfaa2c36f08520671bfe9581b69e'
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 ## STEP 3: Use https://www.twilio.com
 
@@ -63,14 +63,14 @@ def message():
                         .create(
                             body=f"{STOCK}: 🔺{round(abs(calc) * 100, 2)}\nHeadline: {article['title']}\nBrief: {article['description']}\nURL: {article['url']}",
                             from_='+18337786829',
-                            to='+18323405592'
+                            to=''
                         )
         else:
             message = client.messages \
                         .create(
                             body=f"{STOCK}: 🔻{round(abs(calc) * 100, 2)}\nHeadline: {article['title']}\nBrief: {article['description']}\nURL: {article['url']}",
                             from_='+18337786829',
-                            to='+18323405592'
+                            to=''
                         )
                 
 if abs(calc) >= .00:

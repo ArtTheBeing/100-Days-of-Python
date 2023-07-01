@@ -5,7 +5,7 @@ from pprint import pprint
 
 class FlightSearch:
     def __init__(self):
-        self.kiwi_api = 'BGeNJ4SlLL6JnCO9804_mejmBd6e-kJZ'
+        self.kiwi_api = ''
         self.kiwi_url = 'https://tequila-api.kiwi.com'
         self.headers = {"apikey" : self.kiwi_api}
         self.search_url = 'https://api.tequila.kiwi.com/v2/search'

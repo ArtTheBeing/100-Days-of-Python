@@ -1,8 +1,8 @@
 #Workout Tracker
 import requests
 import datetime as dt
-nutrionx_api = '053b9a628e5014145dc595f8e62046f3'
-nutrionx_appid = '12bc86ea'
+nutrionx_api = ''
+nutrionx_appid = ''
 #workout = input("Tell me about your workout: ")
 workout= "i ran 3 miles"
 headers = {'x-app-id' : nutrionx_appid,
@@ -39,7 +39,7 @@ google_params = {
     }
 }
 
-headers = {'Bearer' : 'ksajdfehfhaswqad'}
+headers = {'Bearer' : ''}
 
 response = requests.post(url = sheety_url, json= google_params, headers=headers)
 print(response.text)

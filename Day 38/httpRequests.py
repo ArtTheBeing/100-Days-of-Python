@@ -4,7 +4,7 @@
 #requests.put() - Updata sent data
 #requests.delete() - Delete some information you have sent
 
-TOKEN = 'fghdasheahfajhfe'
+TOKEN = ''
 USERNAME = 'dannydymes'
 GRAPHID = 'graph1'
 import datetime as dt
