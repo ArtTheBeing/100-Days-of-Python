@@ -31,8 +31,6 @@ class InternetSpeedBot:
         passw.send_keys(Keys.ENTER)
         time.sleep(2)
         input('Confirm there is no captcha, or complete captcha(type any key): ')
-        tweet_compose = self.driver.find_element(By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div[2]/div/div/div/div')
-        tweet_compose.send_keys('Hey')
-        time.sleep(5)
+
 z = InternetSpeedBot(150,60)
 z.tweet(str(email), str(password))
