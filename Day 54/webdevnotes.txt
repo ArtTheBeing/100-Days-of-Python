@@ -1,0 +1,12 @@
+Client: User going onto browser, client side
+Server: Powerful computer thats on 24/7
+Databse: Supped up spreadsheet
+
+Library vs Framework:
+Library -> set of reusable functions used by computer programs. You are in full control when you call a method from a library and the control is returned. Ex: Beautiful Soup
+Framework -> piece of code that dictates the architecture of your project and aids in programs. The code nevers calls into a framework, instead the framework calls you. Cant be used when in the middle of a project. Has to be implemented in a new project
+Framework Ex: Flask
+
+powershell commands:
+$env:FLASK_APP = "backend.py"
+python -m flask run
