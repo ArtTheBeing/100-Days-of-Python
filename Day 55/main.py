@@ -2,11 +2,27 @@ from flask import Flask
 app = Flask(__name__)
 #print(__name__)
 
+
+def make_bold(function):
+    def wrapper():
+        this = function()
+        return f'<b>{this}</b>'
+    return wrapper
+
+def make_underline(function):
+    def wrapper():
+        this = function()
+        return f'<u>{this}</u>'
+    return wrapper
+
 @app.route('/')
 def hello_world():
     return '<h1 style="text-align: center">Hello, World!</h1>'
 
+
 @app.route('/bye')
+@make_bold
+@make_underline
 def say_bye():
     return 'Bye'
 
