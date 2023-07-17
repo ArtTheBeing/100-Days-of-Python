@@ -1,0 +1,11 @@
+<!-- {{form method="POST" action="{{ url_for('login') }}" novalidate> novalidate turns off the browsers validation detector
+			{{ form.csrf_token }}  Required Secure Token (Create in main)
+			<p>{{ form.email.label }}<br> {{ form.email(size=30) }}</p>
+			
+			<p>{{ form.password.label }}<br> {{ form.password(size=30) }}</p>
+			
+			{{ form.submit }}
+		</form>}} 
+	
+	THE ABOVE CAN BE DONE BY THE COMMAND BELOW -->
+    {{ render_form(form) }}
