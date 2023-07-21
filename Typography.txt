@@ -1,0 +1,19 @@
+Typography
+
+Keep a design limited to 2 fonts. Have the fonts to have similar moods/time era. Having one beinga serif and another being a sans serif is a good combination
+
+Heading - sans serif
+body- serif
+
+FONTS MATTER
+
+Serif family has feet at bottom. text with edges.
+
+Sans-Serif have perfect right angles. No feet. Humanist typeface in sans-serif is popular among startups. Humanist is highly readable and highly legible
+
+Alignment is very important. Make sure items are alligned as it makes the website look more organized and professional. Target your audience well.
+Use contrasting color schemes for pop, and similar colors for smoothness.
+
+Hierarchy is another huge deal. Using popping colors and bigger sizes for fonts, you can create a hierarchy for what is seen first vs what is seen last.
+
+Whitespace is crucial. The more spaces something has around it, the more important it will seem.

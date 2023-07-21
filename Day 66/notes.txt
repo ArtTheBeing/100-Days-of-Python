@@ -1,0 +1,20 @@
+class Cafe(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(250), unique=True, nullable=False)
+    map_url = db.Column(db.String(500), nullable=False)
+    img_url = db.Column(db.String(500), nullable=False)
+    location = db.Column(db.String(250), nullable=False)
+    seats = db.Column(db.String(250), nullable=False)
+    has_toilet = db.Column(db.Boolean, nullable=False)
+    has_wifi = db.Column(db.Boolean, nullable=False)
+    has_sockets = db.Column(db.Boolean, nullable=False)
+    can_take_calls = db.Column(db.Boolean, nullable=False)
+    coffee_price = db.Column(db.String(250), nullable=True)
+
+    def to_dict(self):
+        return {c.name: getattr(self, c.name, None) for c in self.__table__.columns}
+                ^Column Name     the getattr(self, c.name, None) is a built in function that returns the attributes of the Cafe you are calling. If attribute not found, it returns None
+                self.__table__.columns is just the columns of the table
+
+                it takes each row one by one, then assigns a value to the column name. That way, each row turns into a dictionary. If you come back to the notes and are confused
+                then zoom out and look at the overall scope of the dictionary
