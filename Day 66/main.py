@@ -120,7 +120,7 @@ def closed(id):
         cafe=db.get_or_404(Cafe, id)
         if cafe:
             db.session.delete(cafe)
-            db.session.commit
+            db.session.commit()
             return jsonify(response={"success": "Successfully updated the price."})
         else:
             return jsonify(response={'Not found' : 'Not in database'})
