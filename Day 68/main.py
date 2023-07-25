@@ -29,7 +29,7 @@ class User(UserMixin, db.Model):
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("index.html", logged_in=current_user.is_authenticated)
 
 
 @app.route('/register', methods=['POST', 'GET'])
@@ -44,9 +44,10 @@ def register():
         )
         db.session.add(user)
         db.session.commit()
+        login_user(user)
         return redirect(url_for('secrets'))
 
-    return render_template("register.html")
+    return render_template("register.html", logged_in=current_user.is_authenticated)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -60,17 +61,18 @@ def login():
         else:
             flash("Wrong password")
         
-    return render_template("login.html")
+    return render_template("login.html", logged_in=current_user.is_authenticated)
 
 
 @app.route('/secrets')
 def secrets():
-    return render_template("secrets.html")
+    return render_template("secrets.html", logged_in=current_user.is_authenticated)
 
 
 @app.route('/logout')
 def logout():
-    pass
+    logout_user()
+    return redirect(url_for('home'))
 
 
 @app.route('/download')
