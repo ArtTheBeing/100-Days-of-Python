@@ -15,7 +15,7 @@ app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 db = SQLAlchemy(app)
 bootstrap = Bootstrap5(app)
 
-generated_key = 'ajhsfuigiuhasd'
+
 
 ##Cafe TABLE Configuration
 class Cafe(db.Model):

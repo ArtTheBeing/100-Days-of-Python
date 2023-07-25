@@ -1,0 +1,9 @@
+Authentication- Login for accounts
+
+Encryption and Hashing:
+Encryption: Scrambling a message, and then using a key to decode it
+Hashing: Can read going forward, but almost impossible to read backwards. Deals with prime numbers and what not
+
+Hashing and Salting:
+Salting is generating a randome set of characters to add to the end of a password
+Salt rounds basically rinse and repeat. This means that you would take the hash, and then salt it, and then hash it again
